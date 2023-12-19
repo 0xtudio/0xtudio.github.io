@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>0xtudio - Game Studio</title>
 </head>
 <body>
     <header>
         <h1>Welcome to <span class="logo">0xtudio</span></h1>
+        <label class="switch" for="modeSwitch">
+            <input type="checkbox" style="opacity: 0;" id="modeSwitch">
+            <span class="slider round">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </span>
+        </label>
     </header>
     
     <nav>
@@ -85,6 +92,6 @@
         <p>&copy; 2023 <span class="logo">0xtudio</span>. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
