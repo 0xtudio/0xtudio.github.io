@@ -3,95 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>0xtudio - Game Studio</title>
 </head>
-<body>
+<body class="light-mode">
     <header>
-        <h1>Welcome to <span class="logo">0xtudio</span></h1>
-        <label class="switch" for="modeSwitch">
-            <input type="checkbox" style="opacity: 0;" id="modeSwitch">
-            <span class="slider round">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-            </span>
-        </label>
+        <h1 class="logo">0xtudio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="slider">
+            <input type="checkbox" id="modeSwitch">
+            <div class="round">
+                <i class="moon">🌙</i>
+                <i class="sun">☀️</i>
+            </div>
+        </div>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#games">Games</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="home">
-        <div class="hero">
-            <h2>Immerse Yourself in Gaming Excellence</h2>
-            <p>At <span class="highlight">0xtudio</span>, we craft captivating worlds and unforgettable experiences through our passion for game development.</p>
-            <a href="#games" class="cta-button">Explore Our Games</a>
-        </div>
+
+    <section id="home" class="hero">
+        <h2>Welcome to 0xtudio</h2>
+        <p>Your destination for immersive gaming experiences.</p>
+        <a href="#" class="cta-button">Learn More</a>
     </section>
-    
-    <section id="about">
+
+    <section id="about" class="about">
         <h2>About Us</h2>
-        <p>
-            In the year 2015, we eagerly embarked on our game development journey with a vision to create immersive experiences.
-            However, life threw unexpected challenges our way, disrupting our progress and hindering the completion of our envisioned games.
-            Despite the setbacks, we persevered through the various stuff life presented, and now, with renewed determination, we are back on track
-            to fulfill our original mission.
-        </p>
+        <p>Discover the story of 0xtudio and our mission to create captivating games.</p>
     </section>
-    
-    <section id="games">
-        <h2>Our Games</h2>
 
-        <div class="game">
-            <img src="game1.jpg" alt="Game 1">
-            <h3>Adventure Quest</h3>
-            <p>An epic journey through mythical lands. Embark on a quest to save the kingdom from dark forces.</p>
-        </div>
-
-        <div class="game">
-            <img src="game2.jpg" alt="Game 2">
-            <h3>Space Odyssey</h3>
-            <p>Explore the vastness of space, encounter alien civilizations, and uncover the mysteries of the universe.</p>
-        </div>
-
-        <div class="game">
-            <img src="game3.jpg" alt="Game 3">
-            <h3>Cybernetic Revolution</h3>
-            <p>A futuristic cyberpunk adventure where you navigate the neon-lit streets and unravel a corporate conspiracy.</p>
-        </div>
+    <section id="games" class="games-container">
+        <!-- Game sections go here -->
     </section>
-    
-    <section id="contact">
+
+    <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <p>Feel free to reach out to us through various channels:</p>
-        
         <div class="contact-item">
-            <img src="email-icon.png" alt="Email Icon">
-            <a href="mailto:info@0xtudio.com">info@0xtudio.com</a>
+            <img src="mail-icon.png" alt="Email">
+            <p>Email: contact@0xtudio.com</p>
         </div>
-
         <div class="contact-item">
-            <img src="twitter-icon.png" alt="Twitter Icon">
-            <a href="https://twitter.com/0xtudio" target="_blank">@0xtudio</a>
+            <img src="twitter-icon.png" alt="Twitter">
+            <p>Twitter: @0xtudio</p>
         </div>
-
         <div class="contact-item">
-            <img src="linkedin-icon.png" alt="LinkedIn Icon">
-            <a href="https://www.linkedin.com/company/0xtudio" target="_blank">0xtudio</a>
+            <img src="linkedin-icon.png" alt="LinkedIn">
+            <p>LinkedIn: 0xtudio</p>
         </div>
     </section>
-    
-    <footer>
-        <p>&copy; 2023 <span class="logo">0xtudio</span>. All rights reserved.</p>
-    </footer>
 
-    <script src="js/script.js"></script>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

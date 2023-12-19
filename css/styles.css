@@ -1,89 +1,30 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+/* Your existing CSS styles */
 
-/* Light Mode Styles */
-body.light-mode {
-    background-color: #f5f5f5;
-    color: #333;
-}
-
-header {
-    background-color: #3498db;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-}
-
-header h1 {
-    margin: 0;
-}
-
-.logo {
-    color: #f39c12;
-}
-
-nav {
-    background-color: #2980b9;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-}
-
-nav li {
-    margin-right: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-section {
+/* Additional styles for other sections */
+.about, .contact {
     text-align: center;
     padding: 50px 20px;
 }
 
-.hero h2 {
-    font-size: 2.5em;
+.about h2, .contact h2 {
+    font-size: 2em;
     color: #34495e;
 }
 
-.hero p {
+.about p, .contact p {
     font-size: 1.3em;
     color: #555;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    text-decoration: none;
-    background-color: #e74c3c;
-    color: #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #c0392b;
+/* Arrange games next to each other */
+.games-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .game {
-    width: 30%;
+    width: calc(30% - 40px);
     margin: 20px;
     padding: 20px;
     border: 1px solid #ddd;
@@ -119,25 +60,9 @@ body.dark-mode {
     color: #fff;
 }
 
-/* Keyframe animation for the moon and sun icons */
-@keyframes showMoon {
-    from {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    to {
-        transform: translate(-50%, -50%) scale(0);
-    }
-}
+/* Add Dark Mode styles as needed */
 
-@keyframes showSun {
-    from {
-        transform: translate(-50%, -50%) scale(0);
-    }
-    to {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}
-
+/* Slider Styles */
 .slider {
     position: absolute;
     top: 20px;
@@ -167,10 +92,10 @@ body.dark-mode {
     position: absolute;
     width: 18px;
     height: 18px;
-    background-color: #3498db; /* Default background color of the switch button */
+    background-color: #3498db;
     border-radius: 50%;
     transition: transform 0.3s ease;
-    transform: translateX(0); /* Initial position to the left */
+    transform: translateX(0);
 }
 
 .slider .round i {
@@ -178,33 +103,32 @@ body.dark-mode {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    font-size: 14px; /* Adjust icon size as needed */
-    color: #f1c40f; /* Default color for moon icon */
+    font-size: 14px;
+    color: #f1c40f;
     transition: color 0.3s ease;
-    animation: showMoon 0.5s ease; /* Moon icon animation */
 }
 
 .slider .round i.sun {
-    color: #f39c12; /* Color for sun icon */
-    animation: showSun 0.5s ease; /* Sun icon animation */
+    color: #f39c12;
 }
 
 .slider input:checked + .round:before {
-    transform: translateX(100%); /* Move to the right when the switch is checked */
+    transform: translateX(100%);
 }
 
 body.dark-mode .slider .round i {
-    color: #f39c12; /* Moon icon color in dark mode */
-}
-
-body.dark-mode .slider .round i.sun {
-    color: #f1c40f; /* Sun icon color in dark mode */
+    color: #f39c12;
 }
 
 body.dark-mode .slider input:checked + .round:before {
-    transform: translateX(0); /* Move to the left in dark mode */
+    transform: translateX(0);
 }
 
-body.dark-mode .slider input:checked + .round i.sun {
-    color: #f39c12; /* Sun icon color in dark mode when checked */
+@keyframes showMoon {
+    from {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    to {
+        transform: translate(-50%, -50%) scale(0);
+    }
 }
