@@ -83,14 +83,14 @@ section {
     padding: 15px 30px;
     font-size: 1.2em;
     text-decoration: none;
-    background-color: #e74c3c;
+    background-color: #8c3ce7;
     color: #fff;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #c0392b;
+    background-color: #2b6cc0;
 }
 
 #about {
