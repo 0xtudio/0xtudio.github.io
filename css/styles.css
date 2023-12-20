@@ -3,12 +3,15 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f5f5f5;
-    color: #333;
+    background: url('../img/bg2.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    color: #fff;
 }
 
 header {
-    background-color: #3498db;
+    background-color: #5429b921;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -23,7 +26,7 @@ header h1 {
 }
 
 nav {
-    background-color: #2980b9;
+    background-color: #5429b918;
     padding: 10px 0;
     text-align: center;
 }
@@ -67,12 +70,12 @@ section {
 
 .hero h2 {
     font-size: 2.5em;
-    color: #34495e;
+    color: #fff;
 }
 
 .hero p {
     font-size: 1.3em;
-    color: #555;
+    color: #fff;
 }
 
 .cta-button {
@@ -176,7 +179,7 @@ section {
 
 .contact-item a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: bold;
 }
 
