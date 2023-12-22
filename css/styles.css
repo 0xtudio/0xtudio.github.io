@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "martian mono";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +11,6 @@ body {
 }
 
 header {
-    background-color: #2933b931;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -26,7 +25,6 @@ header h1 {
 }
 
 nav {
-    background-color: #b9292910;
     padding: 10px 0;
     text-align: center;
 }
@@ -34,9 +32,10 @@ nav {
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 20px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    font-size: 18px;
 }
 
 nav li {
@@ -61,11 +60,17 @@ nav a {
         margin-right: 0;
         margin-bottom: 10px;
     }
+
+    section {
+        text-align: center;
+        margin: 2px 0;
+    }
 }
 
 section {
     text-align: center;
     padding: 50px 20px;
+    margin: 80px 0;
 }
 
 .hero h2 {
@@ -80,11 +85,12 @@ section {
 
 .cta-button {
     display: inline-block;
+    margin: 15px 0;
     padding: 15px 30px;
     font-size: 1.2em;
     text-decoration: none;
     background-color: #8c3ce7;
-    color: #fff;
+    color: #ffffff;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -98,12 +104,12 @@ section {
 }
 
 #about h2 {
-    text-align: center;
+    text-align: center; 
 }
 
 #about h3 {
     width: calc(80% - 40px);
-    margin: 0 auto;
+    margin: 55px auto;
     text-align: center;
 }
 
@@ -118,6 +124,9 @@ section {
     margin: 20px;
     padding: 20px;
     text-align: center;
+    background-color: #0a09092d;
+    border-radius: 11%;
+    word-wrap: break-word;    
 }
 
 #games {
@@ -126,6 +135,7 @@ section {
 
 #games h2 {
     margin-bottom: 20px;
+    background-clip: text;
 }
 
 #games .games-container {
@@ -139,11 +149,17 @@ section {
     margin: 20px;
     padding: 20px;
     text-align: center;
+    background-color: #0a09092d;
+    border-radius: 11%;
 }
 
 .game img {
     max-width: 100%;
     height: auto;
+}
+
+.game h3 {
+    color: #b288e2;
 }
 
 #contact {
