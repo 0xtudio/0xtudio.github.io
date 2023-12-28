@@ -1,5 +1,5 @@
 body {
-    font-family: "martian mono";
+    font-family: "Roboto";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -125,7 +125,7 @@ section {
     padding: 20px;
     text-align: center;
     background-color: #0a09092d;
-    border-radius: 11%;
+    border-radius: 8%;
     word-wrap: break-word;    
 }
 
@@ -150,7 +150,7 @@ section {
     padding: 20px;
     text-align: center;
     background-color: #0a09092d;
-    border-radius: 11%;
+    border-radius: 25px;
 }
 
 .game img {
@@ -159,7 +159,8 @@ section {
 }
 
 .game h3 {
-    color: #b288e2;
+    color: #f0e3ff;
+    font-weight: bold;
 }
 
 #contact {
